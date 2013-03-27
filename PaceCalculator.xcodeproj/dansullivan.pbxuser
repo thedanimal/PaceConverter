@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = CA9203AC16F7DBCA00886C42 /* PaceCalculator */;
+		activeTarget = 8D1107260486CEB800E47090 /* PaceCalculator */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* PaceCalculator */,
+		);
+		breakpoints = (
+			CAABAABE17010238009926EA /* PaceCalculatorController.m:5 */,
+			CAABAB211701137A009926EA /* PaceCalculatorController.m:134 */,
+			CAABAB7917011B8F009926EA /* PaceCalculatorController.m:134 */,
+			CAABAB8E17011D23009926EA /* PaceCalculatorController.m:134 */,
+			CAABABB9170127FE009926EA /* PaceCalculatorController.m:9 */,
+			CAADD4451702915C00286B15 /* PaceCalculatorController.m:33 */,
+			CAADD44C1702928E00286B15 /* PaceCalculatorController.m:111 */,
+		);
+		codeSenseManager = CA9203BC16F7DBD000886C42 /* Code sense */;
+		executables = (
+			CA9203AC16F7DBCA00886C42 /* PaceCalculator */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					787,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 386112384;
+			PBXWorkspaceStateSaveDate = 386112384;
+		};
+		perUserProjectItems = {
+			CA2765A317029D700071EF17 = CA2765A317029D700071EF17 /* PBXTextBookmark */;
+			CA7C00DD17039B82009A9C3B /* PBXTextBookmark */ = CA7C00DD17039B82009A9C3B /* PBXTextBookmark */;
+			CAA3AB1017029D0E006EF357 = CAA3AB1017029D0E006EF357 /* PBXTextBookmark */;
+			CAADD4521702931900286B15 = CAADD4521702931900286B15 /* PBXTextBookmark */;
+			CAD7EA0C16F7EBC700736F02 = CAD7EA0C16F7EBC700736F02 /* PBXTextBookmark */;
+			CAD7EA0D16F7EBC700736F02 = CAD7EA0D16F7EBC700736F02 /* PBXTextBookmark */;
+		};
+		sourceControlManager = CA9203BB16F7DBD000886C42 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107260486CEB800E47090 /* PaceCalculator */ = {
+		activeExec = 0;
+		executables = (
+			CA9203AC16F7DBCA00886C42 /* PaceCalculator */,
+		);
+	};
+	CA2765A317029D700071EF17 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CAD7E9D016F7DE4600736F02 /* PaceCalculatorController.m */;
+		name = "PaceCalculatorController.m: 27";
+		rLen = 0;
+		rLoc = 1084;
+		rType = 0;
+		vrLen = 1766;
+		vrLoc = 0;
+	};
+	CA7C00DD17039B82009A9C3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CAD7E9D016F7DE4600736F02 /* PaceCalculatorController.m */;
+		name = "PaceCalculatorController.m: 27";
+		rLen = 0;
+		rLoc = 1084;
+		rType = 0;
+		vrLen = 1766;
+		vrLoc = 0;
+	};
+	CA9203AC16F7DBCA00886C42 /* PaceCalculator */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = PaceCalculator;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	CA9203BB16F7DBD000886C42 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	CA9203BC16F7DBD000886C42 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	CAA3AB1017029D0E006EF357 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CAD7E9D016F7DE4600736F02 /* PaceCalculatorController.m */;
+		name = "PaceCalculatorController.m: 27";
+		rLen = 0;
+		rLoc = 1084;
+		rType = 0;
+		vrLen = 1766;
+		vrLoc = 0;
+	};
+	CAABAABE17010238009926EA /* PaceCalculatorController.m:5 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = CAD7E9D016F7DE4600736F02 /* PaceCalculatorController.m */;
+		functionName = "-buttonPressed:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 5;
+		location = PaceCalculator;
+		modificationTime = 386044784.860859;
+		state = 2;
+	};
+	CAABAB211701137A009926EA /* PaceCalculatorController.m:134 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = CAD7E9D016F7DE4600736F02 /* PaceCalculatorController.m */;
+		functionName = "-convertValuesForDistance";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 134;
+		location = PaceCalculator;
+		modificationTime = 386044784.861112;
+		state = 2;
+	};
+	CAABAB7917011B8F009926EA /* PaceCalculatorController.m:134 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = CAD7E9D016F7DE4600736F02 /* PaceCalculatorController.m */;
+		functionName = "-convertValuesForDistance";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 134;
+		location = PaceCalculator;
+		modificationTime = 386044784.8612559;
+		state = 1;
+	};
+	CAABAB8E17011D23009926EA /* PaceCalculatorController.m:134 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = CAD7E9D016F7DE4600736F02 /* PaceCalculatorController.m */;
+		functionName = "-calculateDistance";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 134;
+		location = PaceCalculator;
+		modificationTime = 386044784.861393;
+		state = 1;
+	};
+	CAABABB9170127FE009926EA /* PaceCalculatorController.m:9 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = CAD7E9D016F7DE4600736F02 /* PaceCalculatorController.m */;
+		functionName = "-buttonPressed:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 9;
+		location = PaceCalculator;
+		modificationTime = 386044784.861531;
+		state = 2;
+	};
+	CAADD4451702915C00286B15 /* PaceCalculatorController.m:33 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = CAD7E9D016F7DE4600736F02 /* PaceCalculatorController.m */;
+		functionName = "-convertStringToTime:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 33;
+		location = PaceCalculator;
+		modificationTime = 386044789.946949;
+		state = 1;
+	};
+	CAADD44C1702928E00286B15 /* PaceCalculatorController.m:111 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = CAD7E9D016F7DE4600736F02 /* PaceCalculatorController.m */;
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 111;
+		modificationTime = 386044784.861838;
+		state = 2;
+	};
+	CAADD4521702931900286B15 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CAD7E9CF16F7DE4600736F02 /* PaceCalculatorController.h */;
+		name = "PaceCalculatorController.h: 17";
+		rLen = 1;
+		rLoc = 302;
+		rType = 0;
+		vrLen = 1047;
+		vrLoc = 0;
+	};
+	CAD7E9CF16F7DE4600736F02 /* PaceCalculatorController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {965, 672}}";
+			sepNavSelRange = "{302, 1}";
+			sepNavVisRange = "{0, 1047}";
+			sepNavWindowFrame = "{{565, 233}, {790, 496}}";
+		};
+	};
+	CAD7E9D016F7DE4600736F02 /* PaceCalculatorController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1020, 6482}}";
+			sepNavSelRange = "{1084, 0}";
+			sepNavVisRange = "{0, 1766}";
+			sepNavWindowFrame = "{{473, 93}, {816, 785}}";
+		};
+	};
+	CAD7EA0C16F7EBC700736F02 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CAD7E9D016F7DE4600736F02 /* PaceCalculatorController.m */;
+		name = "PaceCalculatorController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 120;
+		vrLoc = 0;
+	};
+	CAD7EA0D16F7EBC700736F02 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CAD7E9CF16F7DE4600736F02 /* PaceCalculatorController.h */;
+		name = "PaceCalculatorController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 134;
+		vrLoc = 0;
+	};
+}
