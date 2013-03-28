@@ -5,15 +5,6 @@
     IBOutlet NSTextField *timeField;
     IBOutlet NSTextField *distanceField;
 	
-//	float distance;
-//	int secondsPace;
-//	int totalSeconds;
-//	
-//	int totalSecondsPace;
-//
-//	int secondsDistance;
-	
-	
 }
 - (IBAction)buttonPressed:(id)sender;
 
@@ -27,21 +18,9 @@
 -(NSInteger) convertStringToTimeNoHours:(NSString *) timeAsTextField;
 -(NSInteger) convertStringToTimeNoHoursMinutes:(NSString *) timeAsTextField;
 
-
-//-(NSInteger) convertStringToTime:(NSTextField*) timeAsTextField;
-
 -(void) calculateDistance;
 -(void) calculateTotalTime;
 -(void) calculatePace;
-
-//- (void)convertValues;
-//-(void) convertValuesForDistance;
-
-//- (void)convertValuesNoHours;
-
-//-(void) calculatePace;
-//-(void) calculateDistance;
-//-(void) calculateTotalTime;
 
 
 @end

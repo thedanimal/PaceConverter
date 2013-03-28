@@ -2,7 +2,6 @@
 //  main.m
 //  PaceCalculator
 //
-//  Created by Dan Sullivan on 3/18/13.
 //  Copyright __MyCompanyName__ 2013. All rights reserved.
 //
 

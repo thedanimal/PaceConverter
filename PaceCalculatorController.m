@@ -2,7 +2,8 @@
 
 @implementation PaceCalculator
 - (IBAction)buttonPressed:(id)sender {
-//    paceField.stringValue = @"8:01";
+// Uncomment these to hardcode data when development testing
+//    	paceField.stringValue = @"8:01";
 //	distanceField.stringValue = @"8";
 //	timeField.stringValue = @"";
 	
@@ -32,7 +33,7 @@
 {
 	float tSeconds = 0.0;
 	
-    NSString *timeString = timeAsTextField;
+   	NSString *timeString = timeAsTextField;
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 	
 	//what does it do if it can't find hh or mm?
@@ -41,18 +42,15 @@
 	
 	formatter.dateFormat = @"ss";
 	int seconds = [[formatter stringFromDate:timeDate] intValue];
-//	printf("seconds: %d\n", seconds);
 	
 	formatter.dateFormat = @"hh";
 	int hours = [[formatter stringFromDate:timeDate] intValue];
 	if(hours == 12) { //is this because 12 is noon?
 		hours = 0;
 	}
-//	printf("hours: %d\n", hours);
 	
 	formatter.dateFormat = @"mm";
 	int minutes = [[formatter stringFromDate:timeDate] intValue];
-//	printf("minutes: %d\n", minutes);
 	
 	tSeconds = seconds + (minutes * 60) + (hours * 3600);
 
@@ -71,7 +69,7 @@
 {
 	float tSeconds = 0.0;
 	
-    NSString *timeString = timeAsTextField;
+    	NSString *timeString = timeAsTextField;
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 	
 	formatter.dateFormat = @"mm:ss";
@@ -79,11 +77,9 @@
 	
 	formatter.dateFormat = @"ss";
 	int seconds = [[formatter stringFromDate:timeDate] intValue];
-//	printf("seconds: %d\n", seconds);
 		
 	formatter.dateFormat = @"mm";
 	int minutes = [[formatter stringFromDate:timeDate] intValue];
-//	printf("minutes: %d\n", minutes);
 	
 	tSeconds = seconds + (minutes * 60);
 		
@@ -93,23 +89,19 @@
 {
 	float tSeconds = 0.0;
 	
-    NSString *timeString = timeAsTextField;
+    	NSString *timeString = timeAsTextField;
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 	
 	formatter.dateFormat = @"ss";
 	NSDate *timeDate = [formatter dateFromString:timeString];
 	
 	int seconds = [[formatter stringFromDate:timeDate] intValue];
-//	printf("seconds: %d\n", seconds);
 		
 	tSeconds = seconds;
 	
 	return tSeconds;
 	
 }
-
-	
-
 
 
 //this might be best as a +
@@ -123,11 +115,7 @@
 		m = m - 60;
 	}
 	
-//	printf("in calculate Pace, h:m:s %d:%d:%d\n", h, m, s);
-	
 	NSString *timerend = [[NSString alloc] initWithFormat:@"%2d:%02.2d:%02.2d", h, m, s];
-	
-//	NSLog(@"value is %@\n", timerend);
 	
 	return timerend;	
 }
@@ -267,196 +255,6 @@
 	
     return [NSString stringWithFormat:@"%02d:%02d:%02d",hours, minutes, seconds];
 }
-
-//-(void) convertValues {
-//
-////	 printf("hardcoding the time\n");
-////	 NSString *timeString = @"2:3";//3661
-//	 NSString *timeString = timeField.stringValue;
-//	 NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-//
-//	 formatter.dateFormat = @"hh:mm:ss";
-//	 NSDate *timeDate = [formatter dateFromString:timeString];
-//
-//	 formatter.dateFormat = @"ss";
-//	 int seconds = [[formatter stringFromDate:timeDate] intValue];
-//	 printf("seconds: %d\n", seconds);
-//	 
-//	 formatter.dateFormat = @"hh";
-//	 int hours = [[formatter stringFromDate:timeDate] intValue];
-//	 if(hours == 12) {
-//		 hours = 0;
-//	 }
-//	 printf("hours: %d\n", hours);
-//
-//	 formatter.dateFormat = @"mm";
-//	 int minutes = [[formatter stringFromDate:timeDate] intValue];
-//	 printf("minutes: %d\n", minutes);
-//	 
-//	 totalSeconds = seconds + (minutes * 60) + (hours * 3600);
-////	 if(totalSeconds == 0) { 
-////		 [self convertValuesNoHours];
-////	 } else {
-//////	 int t = [timeField.stringValue intValue];
-////		 printf("in convertValues - value of time = %d and distance %d\n", totalSeconds, distance);	
-////	 }
-//	 	 
-//}
-//
-//-(void) calculatePace {
-//	//get totalSeconds
-//
-////	[self convertValuesNoHours];
-//	[self convertValues];
-//		
-//	if(distance != 0) {
-//		printf("in calculate Pace, timeInSeconds %d\n", totalSeconds);
-//		secondsPace = totalSeconds / distance;
-//	}
-//	int m = secondsPace / 60;
-//	int s = secondsPace - (m * 60); //16*60+30 = 960+30 = 990
-//	int hours = m / 60;
-//	printf("in calculate Pace, h:m:s %d:%d:%d\n", hours, m, s);
-//
-//	NSString *timerend = [[NSString alloc] initWithFormat:@"%2d:%02.2d:%02.2d", hours, m, s];
-//	
-//	NSLog(@"value is %@\n", timerend);
-//	
-//	paceField.stringValue = timerend;	 
-//}
-////given we have pace and distance
-//-(void) calculateTotalTime {
-//	//get totalSeconds
-//	NSString *paceString2 = paceField.stringValue;
-//	NSDateFormatter *formatter2 = [[NSDateFormatter alloc] init];
-//	
-//	formatter2.dateFormat = @"mm:ss";
-//	NSDate *timeDatePace = [formatter2 dateFromString:paceString2];
-//	
-//	NSLog(@"paceString2 is %@\n", paceString2);	
-//	
-//	formatter2.dateFormat = @"ss";
-//	int secondsPace2 = [[formatter2 stringFromDate:timeDatePace] intValue];
-//	printf("secondsPace: %d\n", secondsPace2);
-//	
-////	formatter2.dateFormat = @"hh";
-////	int hoursPace = [[formatter2 stringFromDate:timeDatePace] intValue];
-////	printf("hoursPace: %d\n", hoursPace);
-//	
-//	formatter2.dateFormat = @"mm";
-//	int minutesPace = [[formatter2 stringFromDate:timeDatePace] intValue];
-//	printf("minutesPace: %d\n", minutesPace);
-//	
-//	totalSecondsPace = secondsPace2 + (minutesPace * 60) ;//+ (hoursPace * 3600);
-//	
-//	int time = totalSecondsPace * distance;	
-//	int m = time / 60;
-//	printf("in calculate m %d - time %d\n", m, time);
-//	int hours = 0;
-//
-//	while(m > 60 ) {
-//		m = m - 60;
-//		hours = hours + 1;
-//		printf("2 in calculate m %d - time %d\n", m, time);
-//	}
-//	printf("3 in calculate m %d - time %d\n", m, time);
-//
-//	int s = time - (m * 60) - 3600 * hours;
-//	printf("in calculate total time, h:m:s %d:%d:%d\n", hours, m, s);
-//	
-//	NSString *t = [[NSString alloc] initWithFormat:@"%2d:%02.2d:%02.2d", hours, m, s];
-//	timeField.stringValue = t;
-//	
-//	
-//}
-//-(void) convertValuesForDistance {	
-//
-//	NSString *paceString2 = paceField.stringValue;
-//	NSDateFormatter *formatter2 = [[NSDateFormatter alloc] init];
-//
-//	formatter2.dateFormat = @"mm:ss";
-//	NSDate *timeDatePace = [formatter2 dateFromString:paceString2];
-//
-//	NSLog(@"paceString2 is %@\n", paceString2);	
-//		
-//	formatter2.dateFormat = @"ss";
-//	int secondsPace2 = [[formatter2 stringFromDate:timeDatePace] intValue];
-//	printf("secondsPace: %d\n", secondsPace2);
-//	
-////	formatter2.dateFormat = @"hh";
-////	int hoursPace = [[formatter2 stringFromDate:timeDatePace] intValue];
-////	printf("hoursPace: %d\n", hoursPace);
-//	
-//	formatter2.dateFormat = @"mm";
-//	int minutesPace = [[formatter2 stringFromDate:timeDatePace] intValue];
-//	printf("minutesPace: %d\n", minutesPace);
-//	
-//	totalSecondsPace = secondsPace2 + (minutesPace * 60) ;//+ (hoursPace * 3600);
-//
-//	if(totalSecondsPace != 0) {
-//		distance = (float) totalSeconds / totalSecondsPace;
-//	}
-//	
-//	NSString *d = [[NSString alloc] initWithFormat:@"%02.2f", distance];
-//	distanceField.stringValue = d;	 	
-//}
-//
-////given we have pace and time
-//-(void) calculateDistance {
-//	//get totalSeconds
-//	NSString *paceString2 = paceField.stringValue;
-//	NSDateFormatter *formatter2 = [[NSDateFormatter alloc] init];
-//	
-//	formatter2.dateFormat = @"mm:ss";
-//	NSDate *timeDatePace = [formatter2 dateFromString:paceString2];
-//	
-//	NSLog(@"paceString2 is %@\n", paceString2);	
-//	
-//	formatter2.dateFormat = @"ss";
-//	int secondsPace2 = [[formatter2 stringFromDate:timeDatePace] intValue];
-//	printf("secondsPace: %d\n", secondsPace2);
-//	
-//	//	formatter2.dateFormat = @"hh";
-//	//	int hoursPace = [[formatter2 stringFromDate:timeDatePace] intValue];
-//	//	printf("hoursPace: %d\n", hoursPace);
-//	
-//	formatter2.dateFormat = @"mm";
-//	int minutesPace = [[formatter2 stringFromDate:timeDatePace] intValue];
-//	printf("minutesPace: %d\n", minutesPace);
-//	
-//	totalSecondsPace = secondsPace2 + (minutesPace * 60) ;//+ (hoursPace * 3600);
-//	
-//	if(totalSecondsPace != 0) {
-//		[self convertValues];
-//		distance = (float) totalSeconds / totalSecondsPace;
-//	}
-//	NSString *d = [[NSString alloc] initWithFormat:@"%02.2f", distance];
-//	distanceField.stringValue = d;	 		
-//}
-
-//	printf("in calculate Pace, distance hardcoded to 2 time to 16:30\n");
-//	distance = 2;
-//	distanceField.stringValue = @"2";
-//	timeField.stringValue = @"16:30";
-
-//	NSString *nameText = [[NSString alloc] initWithFormat:@"%d:%d",m, s];
-//	NSLog(@"value is %@\n", nameText);
-
-//	printf("m:s = %d:%d\n", m, s);
-//	paceField.stringValue = @"%d", m;
-
-//	float aFloat = 5.34245;
-//	int aInteger = 3;
-//	NSString *aString = @"A string";
-//	NSLog(@"This is my float: %f \n\n And here is my integer: %i \n\n  And finally my string: %@", aFloat, aInteger, aString);	
-
-//[paceField.stringValue stringwithFormat:@"%d", m];
-//	NSString *nameText = [NSString stringWithFormat:@"%@:%@",[timeField stringValue], [timeField stringValue]];
-
-//	paceField.stringValue = m +":"+s;
-//need to concatentate a string M:S in paceField
-//	paceField.stringValue = "M:s";
-
 
 
 @end
